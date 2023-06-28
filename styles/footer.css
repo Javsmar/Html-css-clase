@@ -1,17 +1,11 @@
-
-
-.main-bg{
-    color: white;
-    /*background-color: black;*/
-}
-
 /* alinear textos en la pagina con tex-aling 
 se utiliza cuando solamente queremos alinear el texto
 y solo alinea horzontalmente*/
+
 .footer{
     text-align: center;
     font-style: italic;
-    background-color: black;
+    background-color: rgb(248, 85, 85);
     /* se puede poner padding de las siguientes formas*/
     /*T - R - B - L */
     /* padding: 50px,10px,10px,10px; */
