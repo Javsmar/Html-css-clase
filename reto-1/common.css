@@ -2,3 +2,16 @@
     color: white;
     background-color: black;
 }
+
+/* alinear textos en la pagina con tex-aling 
+se utiliza cuando solamente queremos alinear el texto
+y solo alinea horzontalmente*/
+.footer{
+    text-align: center;
+    font-style: italic;
+}
+
+
+.footer .footer__powered{
+font-style: normal;
+}
