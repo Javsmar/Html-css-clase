@@ -24,9 +24,13 @@ y solo alinea horzontalmente*/
     /* margin: 10px; */
     
 }
-
+/* 1rem = 16px  dependiendo como pongamos la constante de la medida en px*/
 .footer p{
+    font-size: 1rem;
     margin: 0;
+    font-weight: 400;
+    text-transform:capitalize;
+    line-height: 2;
 }
 
 .footer .footer__powered{
