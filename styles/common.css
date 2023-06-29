@@ -1,6 +1,16 @@
-.main-bg{
-    color: white;
-    background-color: black;
+:root{
+    --main-text-color: rgb(255, 255, 255);
+    --main-bg-color: rgb(0,0,0);
+    --main-brand-color: #e50914;
+    --main-brand-color-light: #e44c54;
 }
 
+.main-bg{
+    color: var(--main-text-color);
+    background-color: var(--main-bg-color);
+}
 
+/*Con border-box incluimos todas las medidas dentro no hacia a fuera*/
+*{
+    box-sizing: border-box;
+}

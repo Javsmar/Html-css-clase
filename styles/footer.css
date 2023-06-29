@@ -5,7 +5,7 @@ y solo alinea horzontalmente*/
 .footer{
     text-align: center;
     font-style: italic;
-    background-color: rgb(248, 85, 85);
+    background-color: var(--main-bg-color);
     /* se puede poner padding de las siguientes formas*/
     /*T - R - B - L */
     /* padding: 50px,10px,10px,10px; */
@@ -18,10 +18,11 @@ y solo alinea horzontalmente*/
     /* border: 2px solid coral; */
 
     /*para redondear las esquinas con border*/
-    border-radius: 10px;
+    /* border-radius: 10px; */
 
     /*margin es como el padding aplica las mismas reglas*/
-    margin: 10px;
+    /* margin: 10px; */
+    
 }
 
 .footer p{
