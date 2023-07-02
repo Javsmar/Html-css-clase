@@ -1,0 +1,29 @@
+/*La posición absoluta no acompaña el< scrol*/
+.header{
+    /*la posicion fixed si acompaña el scrol*/
+    /* position: fixed; */
+
+    /*la posicion sticky acompaña el scrol
+    pero dejar ver el contenido que tiene debajo y este pueda hacer scrol*/
+    position: sticky;
+    background-color: var(--main-bg-color);
+    z-index: 999;
+    width: 100%;
+    top: 0;
+}
+
+.header__image{
+    width: 120px;
+}
+
+.header__image img{
+    width: 100%;
+}
+
+.header .header__nav .header__nav__list{
+    list-style: none; 
+}
+
+.header__nav .header__nav__list .header__nav__list__item a{
+    text-decoration: none;
+}
