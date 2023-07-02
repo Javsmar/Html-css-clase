@@ -1,0 +1,23 @@
+.info{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.info .info__text{
+    padding: 50px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.info .info__video{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 0 0;
+    display: flex;
+    justify-content:end;
+    
+    
+}
+
+
