@@ -1,23 +1,30 @@
 .info{
-    display: flex;
-    flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+    max-width: 768px;
     
 }
 
-.info .info__text{
-    padding: 50px 0 0 10px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
+
 .info .info__video{
+    position: relative;
     display: flex;
-    flex-direction: column;
     padding: 20px 0 0 0;
-    display: flex;
-    justify-content:end;
-    
-    
+    justify-content:center; 
+}
+
+.info .info__video img{
+    position: relative;
+    width: 75%;
+    z-index: 50;
+}
+
+.info .info__video video{
+    width: 47%;
+    position: absolute;
+    left: 26%;
+    top: 15%;
+    z-index: 40;
 }
 
 
