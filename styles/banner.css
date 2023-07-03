@@ -26,3 +26,15 @@
     opacity: 0.4;
 }
 
+
+@media  (800px <= width) and (orientation: landscape){
+    .banner{
+        height: 55vh;
+    }
+}
+
+/* @media (hover: hover) {
+    p:hover {
+        color: yellow;
+    }
+} */

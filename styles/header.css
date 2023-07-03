@@ -16,7 +16,7 @@
     align-items: center;
 }
 
-.header__image{
+.header .header__image{
     width: 150px;
 }
 
@@ -26,16 +26,22 @@
 
 .header .header__nav .header__nav__list{
     list-style: none; 
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .header__nav .header__nav__list .header__nav__list__item a{
     text-decoration: none;
-    margin: 5px;
+}
+
+@media (768px <= width){
+    .header .header__image{
+        width: 200px;
+    } 
 }
 
 
-.header__nav__list{
-    display: flex;
-}
+
 
 

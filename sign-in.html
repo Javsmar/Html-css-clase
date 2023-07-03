@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <title>Sing in | codeflix</title>
+</head>
+<body class="main-bg">
+    <div>
+        <h1>Sing in</h1>
+        <form action="registro.html" method="post">
+            <div>
+                <label for="email">email</label>
+                <input type="mail" id="email" placeholder="Add your email" value="keepcoding@test.com" name="email" required>
+            </div>
+
+            <div>
+                <label for="pwd">password</label>
+                <input type="password" id="password" placeholder="Add your password" name="pwd" required>
+            </div>
+
+            <div>
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" placeholder="Add your phone number" name="phone" required>
+            </div>
+
+            <div>
+                <label for="avatar">+Add</label>
+                <input type="file" id="avatar" name="avatar" accept="image/png, image/jpg" required>
+            </div>
+            <fieldset>
+                <legend>Fav category</legend>
+                <div>
+                    <label for="shows">shows</label>
+                    <input type="radio" id="shows" name="category" checked value="shows">
+                    <label for="docus">Docus</label>
+                    <input type="radio" id="docus" name="category" checked value="docus">
+                </div>
+            </fieldset>
+            <div>
+                <label for="bio">Bio</label>
+                <textarea name="bio" id="bio" placeholder="Add your bio" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <input type="checkbox" name="remember" id="remember" checked>
+                <label for="remember">Remember</label>
+            </div>
+            <div>
+                <label for="country">country</label>
+                <select name="country" id="country">
+                    <option value="es">españa</option>
+                    <option value="en">england</option>
+                    <option value="Us">USA</option>
+                </select>
+            </div>
+            
+            <div>
+                <button class="btn" type="reset">reset</button>
+                <input  class="btn" type="submit" value="sing in">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

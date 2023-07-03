@@ -6,7 +6,7 @@
     border: 1px solid var(--main-brand-color);
 }
 
-.hidden{
+.hidden-xs{
     /*Display none lo utilizamos para ocultar elementos del nuestro html*/
     display: none;
 
@@ -14,5 +14,18 @@
     lugar donde esta miestras que con display: none; desaparece del todo*/
     /* visibility: hidden; */
 }
+
+@media print {
+    *{
+        color: red;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hidden-xs{
+        display: block;
+    }
+}
+
 
 
