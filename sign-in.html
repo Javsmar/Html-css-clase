@@ -6,51 +6,60 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/sing-in.css">
     <title>Sing in | codeflix</title>
 </head>
-<body class="main-bg">
-    <div>
+<body class="main-bg container">
+    <div  class="card">
         <h1>Sing in</h1>
-        <form action="registro.html" method="post">
-            <div>
-                <label for="email">email</label>
-                <input type="mail" id="email" placeholder="Add your email" value="keepcoding@test.com" name="email" required>
+        <form class="form" action="registro.html" method="post" class="form">
+            <div  class="form__element">
+                <label class="for__label" for="email">email</label>
+                <input class="form__input" type="mail" id="email" placeholder="Add your email" value="keepcoding@test.com" name="email" required>
+            </div>
+            <div class="form__element">
+                <label class="for__label" for="age">Age</label>
+                <input class="form__input" type="number" id="age" placeholder="Add your age" required min="18" max="65">
+            </div>
+            <div class="form__element">
+                <label class="for__label" for="pwd">password</label>
+                <input class="form__input" type="password" id="password" placeholder="Add your password" name="pwd" required>
             </div>
 
-            <div>
-                <label for="pwd">password</label>
-                <input type="password" id="password" placeholder="Add your password" name="pwd" required>
+            <div class="form__element">
+                <label class="for__label" for="phone">Phone</label>
+                <input class="form__input" type="tel" id="phone" placeholder="Add your phone number" name="phone" required>
+            </div>
+            <div class="form__element">
+                <label class="for__label" for="dni">DNI</label>
+                <input class="form__input" type="num" id="dni" name="dni" title="Format is 600-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
             </div>
 
-            <div>
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" placeholder="Add your phone number" name="phone" required>
+            <div class="form__element">
+                <label class="for__label" for="avatar">+Add</label>
+                <input class="form__input" type="file" id="avatar" name="avatar" accept="image/png, image/jpg" >
             </div>
-
-            <div>
-                <label for="avatar">+Add</label>
-                <input type="file" id="avatar" name="avatar" accept="image/png, image/jpg" required>
-            </div>
-            <fieldset>
+            <fieldset class="form__element">
                 <legend>Fav category</legend>
                 <div>
-                    <label for="shows">shows</label>
-                    <input type="radio" id="shows" name="category" checked value="shows">
-                    <label for="docus">Docus</label>
-                    <input type="radio" id="docus" name="category" checked value="docus">
+                    <label class="for__label" for="shows">shows</label>
+                    <input class="form__input" type="radio" id="shows" name="category" checked value="shows">
+                    <label class="for__label" for="docus">Docus</label>
+                    <input class="form__input" type="radio" id="docus" name="category" checked value="docus">
                 </div>
             </fieldset>
-            <div>
-                <label for="bio">Bio</label>
-                <textarea name="bio" id="bio" placeholder="Add your bio" cols="30" rows="10"></textarea>
+            <div class="form__element">
+                <label class="for__label" for="bio">Bio</label>
+                <textarea class="form__input" name="bio" id="bio" placeholder="Add your bio" required minlength="10" maxlength="240"></textarea>
             </div>
-            <div>
-                <input type="checkbox" name="remember" id="remember" checked>
+            <div class="form__element">
+                <input class="form__input" type="checkbox" name="remember" id="remember" checked>
                 <label for="remember">Remember</label>
             </div>
-            <div>
+            <div class="form__element">
                 <label for="country">country</label>
-                <select name="country" id="country">
+                <select class="form__input" name="country" id="country" required>
+                    <option value=""></option>
                     <option value="es">españa</option>
                     <option value="en">england</option>
                     <option value="Us">USA</option>
@@ -58,7 +67,7 @@
             </div>
             
             <div>
-                <button class="btn" type="reset">reset</button>
+                <button class="btn btn--secondary" type="reset">reset</button>
                 <input  class="btn" type="submit" value="sing in">
             </div>
         </form>
