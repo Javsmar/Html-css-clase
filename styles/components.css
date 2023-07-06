@@ -1,16 +1,31 @@
 .btn{
     color: var(--main-text-color);
     background-color: var(--main-brand-color);
-    padding: 3px 10px;
+    padding: 10px;
     border-radius: 8px;
     border: 1px solid var(--main-brand-color);
+   
+}
+
+.btn:hover{
+    background-color: rgb(11, 25, 226);
+}
+
+@media(hover: hover){
+    .btn{
+        transition: background-color .5s linear;
+    }
+
+    .btn:hover{
+        background-color: blue;
+    }
 }
 
 .btn.btn--secondary{
     background-color: transparent;
     border-color: var(--main-text-color);
-
 }
+
 
 
 .form__element{
@@ -58,6 +73,30 @@ textarea::placeholder, input::placeholder{
         display: block;
     }
 }
+
+/*spinner*/
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.spinner{
+    margin: 20px;
+    height: 50px;
+    width: 50px;
+    border: 3px solid rgb(191, 191, 240);
+    border-left-color: red;
+    border-radius: 50%;
+    animation: spin 2s linear;
+    animation-iteration-count: infinite;
+}
+
 
 
 
